@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Pecinta Kucing Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-grup">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Masukan nama anda" required>
+            </div>
+            <div class="form-grup">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Masukan email anda" required>
+            </div>
+            <div class="form-grup">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max="60" placeholder="Umur">
+            </div>
+            <div class="form-grup">
+                <label for="dropdown">Jenis Kelamin</label>
+                <select name="Jenis Kelamin" id="dropdown">
+                    <option disabled selected value>Jenis Kelamin</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-grup type-radio">
+                <p>Apakah keluargamu menyukai kucing ?</p>
+                <label>
+                    <input name="user-recommend" value="ya" type="radio" name="pilihan-user" class="input-radio"
+                        checked>Ya
+                </label>
+                <label>
+                    <input name="user-recommend" value="mungkin" type="radio" name="pilihan-user"
+                        class="input-radio">Mungkin
+                </label>
+                <label>
+                    <input name="user-recommend" value="tidak" type="radio" name="pilihan-user"
+                        class="input-radio">Tidak
+                </label>
+            </div>
+            <div class="form-grup">
+                <label for="dropdown">Apakah anda mempunyai seekor kucing ?</label>
+                <select name="Jenis Kelamin" id="dropdown">
+                    <option disabled selected value>pilih salah satu</option>
+                    <option value="have">Saya memilikinya</option>
+                    <option value="not-have">Tidak memilikinya</option>
+                    <option value="maybe-later">Mungkin nanti</option>
+                </select>
+            </div>
+            <div class="form-grup type-checkbox">
+                <p>Jenis Kucing apa yang kau miliki / sukai ?</p>
+                <label>
+                    <input type="checkbox" name="pilihan" value="domestik" class="input-checkbox">
+                    Domestik
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="persia" class="input-checkbox">
+                    Persia
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="anggora" class="input-checkbox">
+                    Anggora
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="siam" class="input-checkbox">
+                    Siam
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="ragdoll" class="input-checkbox">
+                    Ragdoll
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="maine-coon" class="input-checkbox">
+                    Maine Coon
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="sphynx" class="input-checkbox">
+                    Sphynx
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="russian-blue" class="input-checkbox">
+                    Russian Blue
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="bengal" class="input-checkbox">
+                    Bengal
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="munchkin" class="input-checkbox">
+                    Munchkin
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="british-shorthair" class="input-checkbox">
+                    British Shorthair
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="american-shorthair" class="input-checkbox">
+                    American Shorthair
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="scottish-fold" class="input-checkbox">
+                    Scottish Fold
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="balinese" class="input-checkbox">
+                    Balinese
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="japanese-bobtail" class="input-checkbox">
+                    Japanese Bobtail
+                </label>
+                <label>
+                    <input type="checkbox" name="pilihan" value="singapura" class="input-checkbox">
+                    Singapura
+                </label>
+            </div>
+            <div class="form-grup komentar">
+                <p>Mengapa anda menyukai kucing ?</p>
+                <textarea name="comment" class="input-textarea" id="comment"
+                    placeholder="Masukan tanggapan anda di sini..."></textarea>
+            </div>
+            <button type="submit" id="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
